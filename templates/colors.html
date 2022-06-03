@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors  in Image</title>
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <h1 class="header">These are the colors contained in the image</h1>
+
+    <div class="parent-div">
+
+        <div class="first-div">
+            <h1>Here is your image</h1>
+            <img src="{{ user_image }}" alt="image" width="90%">
+        </div>
+
+        <div class="second-div">
+            <h1>These are the top colors in the image</h1>
+            <ul>
+                {% for i in colors: %}
+                <li><h2> {{i}} </h2></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>

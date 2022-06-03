@@ -1,0 +1,25 @@
+body{
+background-color: #EF9F9F;
+color: #FFFF}
+
+input{
+background-color: #EF9F9F}
+
+.form{
+padding: 10% 0px 0px 40%;
+}
+
+.another{
+padding: 0px 0px 0px 40%;}
+
+.parent-div{
+padding: 20px;
+display: flex;}
+
+.first-div{
+width: 50%;
+float: left;
+}
+
+.header{
+font-size: 2.7em}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Color Palette Generator</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body style="background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fillustrations%2Fwater-spray-on-black&psig=AOvVaw2rsHniwuEfawf56r_ka3Mg&ust=1654083166482000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCJi975LSifgCFQAAAAAdAAAAABAJ')">
+    <div>
+        <h1 class="header">Upload An Image!</h1>
+    </div>
+    <div class="form">
+        <form action="{{ url_for('home') }}" method="post" enctype="multipart/form-data">
+            <h1 for="img">Choose an Image</h1>
+            <input type="file" id="img" name="img" accept="image/*">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+</body>
+</html>
